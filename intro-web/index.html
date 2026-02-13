@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0e27" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
+    <meta name="description" content="Touta Kun - Frontend Developer, Automation Learner & Community Strategist">
+    <meta name="author" content="Touta Kun">
+    <title>Touta Kun | Developer Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-bracket">[</span>
+                <span class="brand-name">TOUTAKUN04</span>
+                <span class="brand-slash">/</span>
+                <span class="brand-sub">DEV</span>
+                <span class="brand-bracket">]</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Toggle navigation menu"
+                aria-controls="navLinks" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Touta Kun</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    I build clean interfaces, experiment with automation, and design systems
+                    that improve digital communities. Passionate about problem-solving and
+                    continuous improvement.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:konoetouta69@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://instagram.com/touta.kun04" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/31km7eyz4eeju5f4lgnnfsfak22e" target="_blank"
+                        rel="noopener noreferrer" class="social-icon" aria-label="Spotify">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="graphic-container">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="hero-circle circle-1"></div>
+                    <div class="hero-circle circle-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-animate>
+                <span class="title-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text" data-animate>
+                    <p class="about-intro">
+                        Hey there! I'm Touta Kun, a passionate frontend developer who loves
+                        turning ideas into beautiful, functional digital experiences.
+                    </p>
+                    <p>
+                        My journey in tech started with curiosity and has evolved into a
+                        commitment to crafting user-centric solutions. I specialize in building
+                        responsive web applications, automating workflows, and creating systems
+                        that make a difference.
+                    </p>
+                    <p>
+                        I also bring 3+ years of experience as a Community Manager, focused on
+                        moderation strategy, engagement systems, and healthy community growth.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me in the boxing ring, where I apply
+                        the same discipline and focus that drives my development work.
+                    </p>
+                    <p class="tagline">
+                        <i class="fas fa-quote-left"></i>
+                        Coding by day. Boxing by night.
+                        <i class="fas fa-quote-right"></i>
+                    </p>
+                    <div class="tools-section">
+                        <h3 class="tools-title">Tools I Use</h3>
+                        <div class="tools-grid">
+                            <div class="tools-group">
+                                <h4 class="tools-subtitle">Languages</h4>
+                                <div class="tools-row">
+                                    <span class="tool-pill">HTML</span>
+                                    <span class="tool-pill">CSS</span>
+                                    <span class="tool-pill">JavaScript</span>
+                                    <span class="tool-pill">Node.js</span>
+                                    <span class="tool-pill">Kotlin</span>
+                                    <span class="tool-pill">Java</span>
+                                </div>
+                            </div>
+                            <div class="tools-group">
+                                <h4 class="tools-subtitle">Tools</h4>
+                                <div class="tools-row">
+                                    <span class="tool-pill">npm</span>
+                                    <span class="tool-pill">Git</span>
+                                    <span class="tool-pill">GitHub</span>
+                                    <span class="tool-pill">Express.js</span>
+                                    <span class="tool-pill">Firebase</span>
+                                    <span class="tool-pill">Adobe Photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats" data-animate>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Years Community Management</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Commitment</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-animate>
+                <span class="title-number">02.</span>
+                Tech Stack
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-animate>
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate>
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate>
+                    <div class="category-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile & Other</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Kotlin</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Automation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-animate>
+                <span class="title-number">03.</span>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card" data-animate>
+                    <div class="project-image">
+                        <img src="images/project1.jpg" class="project-img-zoom-half"
+                            alt="Day Line Android task planner app">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TOUTAKUN04/day_line" class="project-link" target="_blank"
+                                rel="noopener noreferrer" aria-label="Open Day Line repository">
+                                <i class="fab fa-android"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Android</span>
+                            <span class="tag">Productivity</span>
+                        </div>
+                        <h3 class="project-title">Day Line</h3>
+                        <p class="project-description">
+                            Lightweight Android daily task planner with reminders, start-time
+                            alarms, recurring tasks, widget support, and weather summary.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/TOUTAKUN04/day_line" class="project-btn" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://github.com/TOUTAKUN04/day_line/releases" class="project-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-download"></i> Releases
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate>
+                    <div class="project-image">
+                        <img src="images/project2.jpg" class="project-img-zoom-half"
+                            alt="Azhdaha Discord slash command bot">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TOUTAKUN04/azhdaha" class="project-link" target="_blank"
+                                rel="noopener noreferrer" aria-label="Open azhdaha repository">
+                                <i class="fas fa-gears"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Discord.js</span>
+                            <span class="tag">Discord</span>
+                        </div>
+                        <h3 class="project-title">azhdaha</h3>
+                        <p class="project-description">
+                            Discord bot with slash commands using discord.js v13, command
+                            loader architecture, deploy script, and environment-based setup.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/TOUTAKUN04/azhdaha" class="project-btn" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://github.com/TOUTAKUN04/azhdaha#readme" class="project-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-book-open"></i> Readme
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-animate>
+                    <div class="project-image">
+                        <img src="images/project3.gif" alt="Bosacius Discord music bot">
+                        <div class="project-overlay">
+                            <a href="https://github.com/TOUTAKUN04/Bosacius-v0.2-" class="project-link"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Open Bosacius-v0.2- repository">
+                                <i class="fas fa-music"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Discord.js</span>
+                            <span class="tag">Music Bot</span>
+                        </div>
+                        <h3 class="project-title">Bosacius v0.2</h3>
+                        <p class="project-description">
+                            Discord music bot with YouTube and SoundCloud playback, queues,
+                            playlists, playback controls, lyrics lookup, and utility features.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/TOUTAKUN04/Bosacius-v0.2-" class="project-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://github.com/TOUTAKUN04/Bosacius-v0.2-#readme" class="project-btn"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-book-open"></i> Readme
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-animate>
+                <span class="title-number">04.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <div class="contact-text" data-animate>
+                    <p class="contact-intro">
+                        I'm always open to discussing new projects, creative ideas, or
+                        opportunities to be part of your visions.
+                    </p>
+                    <p class="contact-motivation">
+                        Every great result starts with a simple conversation. 
+                        </p>
+                        Let's turn your idea into something impactful.
+                    </p>
+                </div>
+                <div class="contact-cta" data-animate>
+                    <div class="cta-card">
+                        <h3>Let's Build Something Amazing Together</h3>
+                        <p>
+                            Whether you have a question, a project idea, or just want to say hi,
+                            I'd love to hear from you.
+                        </p>
+                        <a href="mailto:konoetouta69@gmail.com" class="btn btn-primary btn-large">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-bracket">[</span>
+                    <span class="brand-name">TOUTAKUN04</span>
+                    <span class="brand-slash">/</span>
+                    <span class="brand-sub">DEV</span>
+                    <span class="brand-bracket">]</span>
+                </div>
+                <div class="footer-socials">
+                    <a href="mailto:konoetouta69@gmail.com" class="footer-social" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://instagram.com/touta.kun04" target="_blank" rel="noopener noreferrer"
+                        class="footer-social" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://open.spotify.com/user/31km7eyz4eeju5f4lgnnfsfak22e" target="_blank"
+                        rel="noopener noreferrer" class="footer-social" aria-label="Spotify">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TOUTAKUN04 • Powered By Github.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
