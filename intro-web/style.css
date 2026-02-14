@@ -262,7 +262,7 @@ body {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -277,7 +277,7 @@ body {
 
 .hero-subtitle {
     font-family: var(--font-code);
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-size: 1.5rem;
     color: var(--accent-primary);
     margin-bottom: 1.5rem;
     min-height: 2.5rem;
@@ -357,6 +357,8 @@ body {
 .hero-socials {
     display: flex;
     gap: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 .social-icon {
@@ -372,6 +374,9 @@ body {
     font-size: 1.2rem;
     transition: all 0.3s ease;
     text-decoration: none;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 
 .social-icon:hover {
@@ -379,6 +384,17 @@ body {
     color: white;
     transform: translateY(-3px);
     box-shadow: var(--shadow-glow);
+}
+
+/* Hero graphic should not overlap social icons in mobile */
+@media (max-width: 1024px) {
+    .hero-graphic {
+        order: 2;
+    }
+    
+    .hero-text {
+        order: 1;
+    }
 }
 
 /* Hero Graphic */
@@ -503,7 +519,7 @@ body {
 }
 
 .section-title {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: 3rem;
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
@@ -1065,7 +1081,7 @@ body {
     }
 
     .nav-brand {
-        font-size: clamp(1rem, 4.6vw, 1.25rem);
+        font-size: 1.25rem;
     }
 
     .nav-links {
@@ -1074,7 +1090,8 @@ body {
         right: -100%;
         flex-direction: column;
         background: var(--bg-secondary);
-        width: min(82vw, 320px);
+        width: 82vw;
+        max-width: 320px;
         height: calc(100dvh - 68px);
         padding: 1.25rem 1rem calc(1rem + env(safe-area-inset-bottom));
         border-left: 1px solid var(--glass-border);
