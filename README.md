@@ -61,13 +61,11 @@
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=TOUTAKUN04&theme=tokyonight&hide_border=true&background=FFFFFF&cache_seconds=1" />
 
 <br/>
-  <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TOUTAKUN04&theme=default" width="28%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TOUTAKUN04&theme=default" width="28%" />
-    <p align="center">
-      <br/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TOUTAKUN04&theme=default" width="70%" />
-</p>
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=TOUTAKUN04&theme=default&v=2" width="28%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TOUTAKUN04&theme=default&v=2" width="28%" />
+  <br/><br/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=TOUTAKUN04&theme=default&v=2" width="70%" />
 </div>
 
 ---
