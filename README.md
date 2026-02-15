@@ -58,7 +58,7 @@
 
 ### ⚡ GitHub Stats
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=TOUTAKUN04&theme=tokyonight&hide_border=true&background=FFFFFF" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=TOUTAKUN04&theme=tokyonight&hide_border=true&background=FFFFFF&cache_seconds=1" />
 
 <br/>
   <div align="center">
