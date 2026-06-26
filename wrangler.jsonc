@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "toutakun04",
+  "compatibility_date": "2026-06-26",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "intro-web"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
