@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="cyanotype">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0F0E17">
+    <meta name="description" content="Touta Kun — Solo Android developer building VOID Messenger, an E2EE messaging app, and hardware robots in Kolkata, India.">
+    <meta name="author" content="Touta Kun">
+    <title>Touta Kun — Mobile + Edge + Hardware</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Touta Kun | Developer Portfolio">
+    <meta property="og:description" content="Solo Android developer. Building VOID Messenger end to end, and robots off screen.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Noise texture overlay -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- Animated scan line -->
+    <div class="scan-line" aria-hidden="true"></div>
+
+    <!-- Floating orbs background -->
+    <div class="orb-container" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">[<span class="accent">TOUTAKUN04</span>/DEV]</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link"><span class="num">01</span>About</a>
+                <a href="#skills" class="nav-link"><span class="num">02</span>Skills</a>
+                <a href="#projects" class="nav-link"><span class="num">03</span>Projects</a>
+                <a href="#lab" class="nav-link"><span class="num">04</span>Lab</a>
+                <a href="#contact" class="nav-link"><span class="num">05</span>Contact</a>
+                <button class="mode-toggle" id="modeToggle" type="button" aria-label="Switch print mode">
+                    <i class="fas fa-circle-half-stroke"></i><span id="modeLabel">DIAZO</span>
+                </button>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <div class="eyebrow" data-animate data-delay="0">Sheet 00 — Cover</div>
+                    <h1 class="hero-title" data-animate data-delay="1">Touta Kun,<br>building <span class="accent">off the map.</span></h1>
+                    <div class="hero-subtitle" data-animate data-delay="2">&gt; <span id="typingText"></span><span class="cursor">_</span></div>
+                    <p class="hero-description" data-animate data-delay="3">
+                        I'm a self-taught, solo Android developer in Kolkata. I build production
+                        apps end to end — client, edge backend, and infrastructure — then close
+                        the laptop and build the same kind of systems in servos and sheet metal.
+                    </p>
+                    <div class="btn-row" data-animate data-delay="4">
+                        <a href="#projects" class="btn btn-primary"><span>View Projects</span><i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary"><span>Get In Touch</span><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="social-row" data-animate data-delay="5">
+                        <a href="mailto:konoetouta69@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://instagram.com/touta.kun04" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://open.spotify.com/user/31km7eyz4eeju5f4lgnnfsfak22e" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                        <a href="https://github.com/TOUTAKUN04" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="title-block magnetic-card" data-animate data-delay="2" aria-label="Drawing title block">
+                    <div class="title-block-glow"></div>
+                    <div class="title-block-row tb-title-row">
+                        <div>
+                            <div class="tb-name">TOUTA KUN</div>
+                            <div class="tb-role">Android · Edge Systems · Robotics</div>
+                        </div>
+                    </div>
+                    <div class="title-block-row">
+                        <div class="tb-cell"><span class="tb-label">Location</span><span class="tb-value">Kolkata, IN</span></div>
+                        <div class="tb-cell"><span class="tb-label">Scale</span><span class="tb-value">Solo — 1:1</span></div>
+                    </div>
+                    <div class="title-block-row">
+                        <div class="tb-cell"><span class="tb-label">Current build</span><span class="tb-value accent">VOID Messenger</span></div>
+                        <div class="tb-cell"><span class="tb-label">Rev</span><span class="tb-value">2026</span></div>
+                    </div>
+                    <div class="title-block-row">
+                        <div class="tb-cell"><span class="tb-label">Discipline</span><span class="tb-value">Kotlin / Compose / CF Workers</span></div>
+                        <div class="tb-cell"><span class="tb-label">Sheet</span><span class="tb-value">00 of 05</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-cue">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title" data-animate><span style="color:var(--signal)">01.</span> About</h2>
+                <div class="sheet-tag">Sheet 01 / 05</div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead" data-animate>
+                        <strong>I taught myself Android development</strong> and now build and ship
+                        production apps independently — no team, no handoffs, every layer my own.
+                    </p>
+                    <p data-animate>
+                        My flagship project is <strong>VOID Messenger</strong>, a privacy-focused
+                        end-to-end encrypted messaging app. I own the whole stack: the Kotlin and
+                        Jetpack Compose client, a Cloudflare Workers + Durable Objects + D1 backend,
+                        Supabase for auth, Backblaze B2 for media, and an AI assistant, <strong>AXIOM</strong>,
+                        that I've integrated directly into the app on its own routing layer.
+                    </p>
+                    <p data-animate>
+                        Before this, I spent 3+ years as a community manager, working on moderation
+                        strategy and engagement systems — which is where a lot of my instinct for
+                        designing systems around real people's behavior comes from. A drawing
+                        background feeds the other half: it shapes how I think about interface layout,
+                        and now, how I think about physical form when I design hardware.
+                    </p>
+                </div>
+                <div class="aside-card magnetic-card" data-animate>
+                    <div class="aside-card-glow"></div>
+                    <h3>Off Screen</h3>
+                    <p>When I'm not writing Kotlin or Worker code, I'm usually at the print bed or the paint desk.</p>
+                    <ul class="aside-list">
+                        <li>Bambu Lab A1 Mini — grey PLA prints</li>
+                        <li>Fusion 360 — CAD for robot chassis parts</li>
+                        <li>Acrylics — hand-painted chibi figures</li>
+                        <li>Seasonal hobby sales — Durga Puja, Diwali, fests</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title" data-animate><span style="color:var(--signal)">02.</span> Legend</h2>
+                <div class="sheet-tag">Sheet 02 / 05</div>
+            </div>
+            <div class="legend-grid" data-animate>
+                <div class="legend-cell">
+                    <h4><i class="fab fa-android"></i>Mobile</h4>
+                    <ul>
+                        <li>Kotlin</li>
+                        <li>Jetpack Compose</li>
+                        <li>Android SDK</li>
+                        <li>Room / SQLite</li>
+                    </ul>
+                </div>
+                <div class="legend-cell">
+                    <h4><i class="fas fa-server"></i>Edge & Backend</h4>
+                    <ul>
+                        <li>Cloudflare Workers</li>
+                        <li>Durable Objects · D1</li>
+                        <li>Supabase</li>
+                        <li>Firebase · GCP</li>
+                    </ul>
+                </div>
+                <div class="legend-cell">
+                    <h4><i class="fas fa-tower-broadcast"></i>Realtime</h4>
+                    <ul>
+                        <li>WebRTC</li>
+                        <li>FCM push</li>
+                        <li>WebSockets</li>
+                        <li>HMAC request signing</li>
+                    </ul>
+                </div>
+                <div class="legend-cell">
+                    <h4><i class="fas fa-microchip"></i>Hardware</h4>
+                    <ul>
+                        <li>ESP32 / embedded C</li>
+                        <li>Servo & PWM control</li>
+                        <li>Fusion 360 CAD</li>
+                        <li>FDM 3D printing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title" data-animate><span style="color:var(--signal)">03.</span> Projects</h2>
+                <div class="sheet-tag">Sheet 03 / 05</div>
+            </div>
+
+            <div class="project-list">
+                <div class="project-row" data-animate>
+                    <div class="project-flag">A<span class="status flagship">FLAGSHIP</span></div>
+                    <div>
+                        <h3 class="project-title"><i class="fas fa-lock"></i>VOID Messenger</h3>
+                        <p class="project-desc">
+                            Privacy-focused E2EE messaging app with client-side vault messaging,
+                            group key rotation, and AXIOM — a built-in two-tier AI assistant
+                            running on its own Cloudflare Worker.
+                        </p>
+                        <div class="tag-row">
+                            <span class="tag">Kotlin</span><span class="tag">Compose</span>
+                            <span class="tag">Cloudflare Workers</span><span class="tag">D1</span>
+                            <span class="tag">Supabase</span><span class="tag">Backblaze B2</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <span class="project-link"><i class="fas fa-lock"></i>Closed source</span>
+                        <a href="https://toutakun04.qzz.io" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i>Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="project-row" data-animate>
+                    <div class="project-flag">B<span class="status live">LIVE</span></div>
+                    <div>
+                        <h3 class="project-title"><i class="fas fa-code-branch"></i>Force Flow</h3>
+                        <p class="project-desc">
+                            Android home-screen widget for Codeforces — heatmap, solved count,
+                            streaks, rating, and latest solve, all at a glance.
+                        </p>
+                        <div class="tag-row"><span class="tag">Kotlin</span><span class="tag">Android</span><span class="tag">Codeforces API</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/TOUTAKUN04/force_flow" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i>Code</a>
+                        <a href="https://github.com/TOUTAKUN04/force_flow/releases" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-download"></i>Releases</a>
+                    </div>
+                </div>
+
+                <div class="project-row" data-animate>
+                    <div class="project-flag">C<span class="status live">LIVE</span></div>
+                    <div>
+                        <h3 class="project-title"><i class="fas fa-calendar-day"></i>Day Line</h3>
+                        <p class="project-desc">
+                            Published day-planning Android app, shipped solo end to end and
+                            available on the Play Store.
+                        </p>
+                        <div class="tag-row"><span class="tag">Kotlin</span><span class="tag">Android</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/TOUTAKUN04/day_line" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i>Code</a>
+                        <a href="https://github.com/TOUTAKUN04/day_line/releases" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-download"></i>Releases</a>
+                    </div>
+                </div>
+
+                <div class="project-row" data-animate>
+                    <div class="project-flag">D<span class="status private">WIP</span></div>
+                    <div>
+                        <h3 class="project-title"><i class="fas fa-music"></i>VibeSync</h3>
+                        <p class="project-desc">
+                            Group music sync app, currently being scoped for a web/Electron pivot
+                            to replace its Nearby Connections transport with WebRTC data channels.
+                        </p>
+                        <div class="tag-row"><span class="tag">Kotlin</span><span class="tag">WebRTC</span><span class="tag">Electron (planned)</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/TOUTAKUN04" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i>Profile</a>
+                    </div>
+                </div>
+
+                <div class="project-row" data-animate>
+                    <div class="project-flag">E<span class="status live">LIVE</span></div>
+                    <div>
+                        <h3 class="project-title"><i class="fas fa-share-nodes"></i>Vortex Share</h3>
+                        <p class="project-desc">
+                            Cross-device file transfer app layered over Nearby Connections, NSD,
+                            and WebRTC, with Firebase Realtime DB signaling.
+                        </p>
+                        <div class="tag-row"><span class="tag">Kotlin</span><span class="tag">Nearby Connections</span><span class="tag">WebRTC</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/TOUTAKUN04" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i>Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAB -->
+    <section class="section" id="lab">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title" data-animate><span style="color:var(--signal)">04.</span> The Lab</h2>
+                <div class="sheet-tag">Sheet 04 / 05</div>
+            </div>
+            <p class="lab-intro" data-animate>
+                Where the apps stop and the soldering iron starts. Two quadruped builds, currently in progress.
+            </p>
+            <div class="lab-grid">
+                <div class="lab-card magnetic-card" data-animate>
+                    <span class="lab-status">IN PROGRESS</span>
+                    <h3>BUZO v0.2</h3>
+                    <p>A quadruped robot dog, rebuilt on a repainted "100 Pet Dog" shell with
+                        merged firmware for voice control, an animated OLED face, and
+                        auto-docking.</p>
+                    <ul class="spec-list">
+                        <li><span>Board</span><span>XIAO ESP32S3 Sense</span></li>
+                        <li><span>Gait control</span><span>4x MG90S servos</span></li>
+                        <li><span>Face</span><span>SH1106 OLED, sprite sequences</span></li>
+                        <li><span>Safety</span><span>IR fall detection</span></li>
+                        <li><span>Docking</span><span>IR beacon + Qi charging</span></li>
+                        <li><span>Blocking issue</span><span>GPIO conflict check</span></li>
+                    </ul>
+                </div>
+                <div class="lab-card magnetic-card" data-animate>
+                    <span class="lab-status">LEARNING BUILD</span>
+                    <h3>Sesame Spider</h3>
+                    <p>An open-source quadruped spider, taken on first as a lower-risk build to
+                        learn gait control and wiring before committing to BUZO.</p>
+                    <ul class="spec-list">
+                        <li><span>Board</span><span>XIAO ESP32S3 Sense</span></li>
+                        <li><span>Legs</span><span>8x MG90S via PCA9685</span></li>
+                        <li><span>Display</span><span>1.3" SH1106 OLED</span></li>
+                        <li><span>Audio</span><span>MAX98357A I2S amp</span></li>
+                        <li><span>Control</span><span>WiFi (RF RC deferred)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="section-title" data-animate><span style="color:var(--signal)">05.</span> Contact</h2>
+                <div class="sheet-tag">Sheet 05 / 05</div>
+            </div>
+            <div class="contact-block magnetic-card" data-animate>
+                <div class="contact-block-glow"></div>
+                <div>
+                    <h2>Let's build something amazing together.</h2>
+                    <p>Have a project idea, a question about VOID, or just want to talk robotics
+                        and Android? I'd love to hear from you.</p>
+                </div>
+                <div class="contact-right">
+                    <a href="mailto:konoetouta69@gmail.com" class="btn btn-primary"><span>Send Message</span><i class="fas fa-paper-plane"></i></a>
+                    <div class="social-row">
+                        <a href="mailto:konoetouta69@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://instagram.com/touta.kun04" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://open.spotify.com/user/31km7eyz4eeju5f4lgnnfsfak22e" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                        <a href="https://github.com/TOUTAKUN04" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <span>[TOUTAKUN04/DEV] © 2026</span>
+                <span>Kolkata, India — Rev 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
