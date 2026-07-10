@@ -100,33 +100,7 @@
         hamburger.setAttribute('aria-expanded', false);
     }));
 
-    // =============================================
-    // PRINT-MODE TOGGLE
-    // =============================================
 
-    const modeToggle = document.getElementById('modeToggle');
-    const modeLabel = document.getElementById('modeLabel');
-    const htmlEl = document.documentElement;
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)');
-
-    function setMode(isLight) {
-        htmlEl.setAttribute('data-mode', isLight ? 'diazo' : 'cyanotype');
-        modeLabel.textContent = isLight ? 'CYANOTYPE' : 'DIAZO';
-    }
-
-    // Initial check
-    setMode(prefersLight.matches);
-
-    // Auto-follow system changes
-    prefersLight.addEventListener('change', (e) => {
-        setMode(e.matches);
-    });
-
-    // Manual toggle
-    modeToggle.addEventListener('click', () => {
-        const isDiazo = htmlEl.getAttribute('data-mode') === 'diazo';
-        setMode(!isDiazo);
-    });
 
     // =============================================
     // MAGNETIC CARD EFFECT (cursor-following glow)
