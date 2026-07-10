@@ -484,7 +484,7 @@ html[data-mode="diazo"] .btn-primary:hover {
 .title-block:hover .title-block-glow { opacity: 1; }
 
 .title-block:hover {
-    border-color: rgba(168, 85, 247, 0.3);
+    border-color: var(--signal);
     box-shadow: 0 0 40px var(--signal-glow);
 }
 
@@ -803,7 +803,7 @@ html[data-mode="diazo"] .btn-primary:hover {
     box-shadow: 0 0 15px var(--signal-glow);
 }
 .lab-card:hover {
-    border-color: rgba(168, 85, 247, 0.25);
+    border-color: var(--signal);
     box-shadow: 0 0 30px var(--signal-glow);
 }
 
@@ -865,7 +865,7 @@ html[data-mode="diazo"] .btn-primary:hover {
 }
 .contact-block:hover .contact-block-glow { opacity: 1; }
 .contact-block:hover {
-    border-color: rgba(168, 85, 247, 0.25);
+    border-color: var(--signal);
     box-shadow: 0 0 40px var(--signal-glow);
 }
 
