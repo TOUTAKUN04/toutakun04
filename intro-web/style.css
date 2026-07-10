@@ -34,7 +34,9 @@ html[data-mode="diazo"] {
     --border: rgba(15, 14, 23, 0.14);
     --grid-line: rgba(15, 14, 23, 0.06);
     --grid-line-strong: rgba(15, 14, 23, 0.12);
-    --signal-glow: rgba(168, 85, 247, 0.18);
+    --signal: #FF6B4A;
+    --signal-dim: #cf7a63;
+    --signal-glow: rgba(255, 107, 74, 0.2);
     --teal-glow: rgba(44, 182, 125, 0.15);
 }
 

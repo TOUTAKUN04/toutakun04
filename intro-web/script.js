@@ -12,6 +12,21 @@
     // =============================================
 
     const words = ["Android Developer", "Edge Systems Builder", "Robotics Tinkerer", "Solo Shipper"];
+    const htmlEl = document.documentElement;
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)');
+
+    function setMode(isLight) {
+        htmlEl.setAttribute('data-mode', isLight ? 'diazo' : 'cyanotype');
+    }
+
+    // Set initial mode based on system preference
+    setMode(prefersLight.matches);
+
+    // Auto-follow system changes
+    prefersLight.addEventListener('change', (e) => {
+        setMode(e.matches);
+    });
+
     const typingEl = document.getElementById('typingText');
     let wi = 0, ci = 0, deleting = false;
 
